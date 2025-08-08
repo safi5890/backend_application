@@ -1,0 +1,14 @@
+# Initialize git repository
+git init
+
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit - Todo app with auth"
+
+# Create repository on GitHub and push
+gh repo create backend_full_course --public
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/backend_full_course.git
+git push -u origin main
