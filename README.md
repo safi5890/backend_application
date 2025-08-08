@@ -34,8 +34,7 @@ A full-featured Todo application built with Node.js, Express, and SQLite with JW
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
-   cd chapter_3
+   git clone https://github.com/safi5890/backend_application.git
    ```
 
 2. **Install dependencies:**
@@ -191,4 +190,4 @@ ISC License
 
 ## Author
 
-Your Name
+safi khan
