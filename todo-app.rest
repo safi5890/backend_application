@@ -1,0 +1,51 @@
+### GET / endpoint
+GET http://localhost:5000/
+
+### POST /auth/register endpoint
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "safi@gmail.com",
+    "password": "123123123"
+}
+
+### POST /auth/login endpoint
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "safi@gmail.com",
+    "password": "123123123"
+}
+
+### GET /todos endpoint
+GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0NjM4Njc5LCJleHAiOjE3NTQ3MjUwNzl9.YUuoi9hHD2x2Hl6_g68-tUFpYUIdUfgXHDoQu0SrBCI
+
+### POST /todos endpoint
+POST http://localhost:5000/todos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0NjM4Njc5LCJleHAiOjE3NTQ3MjUwNzl9.YUuoi9hHD2x2Hl6_g68-tUFpYUIdUfgXHDoQu0SrBCI
+
+{
+    "task": "New Todo"
+}
+
+### PUT /todos/:id endpoint
+PUT http://localhost:5000/todos/2?page=1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0NjM4Njc5LCJleHAiOjE3NTQ3MjUwNzl9.YUuoi9hHD2x2Hl6_g68-tUFpYUIdUfgXHDoQu0SrBCI
+
+{
+    "completed": 1
+}
+
+### DELETE /todos/:id endpoint
+DELETE http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU0NjM4MTAzLCJleHAiOjE3NTQ3MjQ1MDN9.akZ95pJK09p9KPPM8t_XdTUqU4tTqDIpQ8SbaPHsN_o
+Content-Type: application/json
+
+{
+    "id": 1
+}
